@@ -128,6 +128,14 @@ a {
   color: currentColor;
 }
 
+.z2 {
+  z-index: 2;
+}
+
+.pointer-events-n {
+  pointer-events: none;
+}
+
 .wrapper-header {
   width: auto;
   height: 500px;
@@ -338,7 +346,7 @@ a {
   background: red;
 }
 
-.nav-menu-pizza {
+.nav-menu-foundation {
   width: 180px;
   height: 180px;
   position: relative;
@@ -353,7 +361,7 @@ a {
           align-items: center;
 }
 
-.nav-pizza {
+.foundation-inner {
   width: 180px;
   height: 180px;
   position: absolute;
@@ -372,12 +380,56 @@ a {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-.nav-pizza:hover {
+.foundation-inner:hover {
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
 }
 
-.nav-slice {
+.foundation-text {
+  width: 183px;
+  height: 183px;
+  left: -3px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.foundation-inner-part {
+  width: 180px;
+  height: 180px;
+  -webkit-user-select: None;
+     -moz-user-select: None;
+      -ms-user-select: None;
+          user-select: None;
+  position: absolute;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.foundation-inner-part-antipasti {
+  width: 180px;
+  height: 180px;
+  -webkit-user-select: None;
+     -moz-user-select: None;
+      -ms-user-select: None;
+          user-select: None;
+  position: absolute;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.foundation-inner-part-antipasti:active {
+  width: 200px;
+  height: 200px;
+  top: -11px;
+  left: -13px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.foundation-inner-part-insalata {
   width: 180px;
   height: 180px;
   -webkit-user-select: None;
@@ -389,7 +441,26 @@ a {
   transition: 0.1s ease-in-out;
 }
 
-.nav-slice:active {
+.foundation-inner-part-insalata:active {
+  width: 210px;
+  height: 210px;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.foundation-inner-part-pizza {
+  width: 180px;
+  height: 180px;
+  -webkit-user-select: None;
+     -moz-user-select: None;
+      -ms-user-select: None;
+          user-select: None;
+  position: absolute;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.foundation-inner-part-pizza:active {
   width: 200px;
   height: 200px;
   top: -11px;
@@ -398,57 +469,7 @@ a {
   transition: 0.1s ease-in-out;
 }
 
-.nav-slice-text {
-  width: 180px;
-  height: 180px;
-  left: 0px;
-  pointer-events: none;
-  position: absolute;
-  z-index: 2;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-}
-
-.nav-menu-pasta {
-  width: 180px;
-  height: 180px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-pasta {
-  width: 180px;
-  height: 180px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-
-.nav-pasta:hover {
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
-}
-
-.pasta-part {
+.foundation-inner-part-pasta {
   width: 180px;
   height: 180px;
   -webkit-user-select: None;
@@ -456,31 +477,43 @@ a {
       -ms-user-select: None;
           user-select: None;
   position: absolute;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.pasta-part:active {
-  width: 200px;
-  height: 200px;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
+.foundation-inner-part-pasta:active {
+  width: 220px;
+  height: 220px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.nav-pasta-text {
+.foundation-inner-part-dolci {
   width: 180px;
   height: 180px;
-  left: 0px;
-  pointer-events: none;
+  -webkit-user-select: None;
+     -moz-user-select: None;
+      -ms-user-select: None;
+          user-select: None;
   position: absolute;
-  z-index: 2;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.foundation-inner-part-dolci:active {
+  width: 190px;
+  height: 190px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .wrapper-menu {
   width: 1000px;
   height: 1000px;
   background: var(--menu-bg);
+}
+
+#butter {
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */

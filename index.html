@@ -12,10 +12,24 @@
     <link rel="stylesheet" href="style/style.css" />
 
     <!-- Scripts -->
+    <script defer src="javascript/menu.js"></script>
+    <script defer src="javascript/supply.json"></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="light">
     <header class="wrapper-header">
       <a class="wrapper-logo" href="#">
+        <img
+          class="logo-pizza-text"
+          src="img/logo/pizza/pizzaTextDark.png"
+          alt=""
+        />
         <div class="logo-pizza">
           <img
             class="logo-slice pizza8"
@@ -58,11 +72,7 @@
             alt=""
           />
         </div>
-        <img
-          class="logo-pizza-text dark"
-          src="img/logo/pizza/pizzaTextDark.png"
-          alt=""
-        />
+
         <img
           class="logo-pizza-name"
           src="img/logo/pizza/PizzaLogoTextDark.png"
@@ -74,7 +84,100 @@
 
     <nav></nav>
 
-    <main></main>
+    <main class="wrapper-main">
+      <nav class="wrapper-nav-menu">
+        <!-- Menu Navigation -->
+        <ul class="nav-menu-links">
+          <li class="nav-menu-link">
+            <a class="#" href="#">
+              <span>Antipasti</span>
+            </a>
+          </li>
+          <li class="nav-menu-link">
+            <a class="#" href="#">
+              <span>Insalata</span>
+            </a>
+          </li>
+          <li class="nav-menu-link">
+            <a class="nav-menu-pizza" href="#">
+              <img
+                class="nav-slice-text"
+                src="img/logo/pizza/pizzaTextLight.png"
+                alt=""
+              />
+              <div class="nav-pizza">
+                <img
+                  class="pizza8 nav-slice"
+                  src="img/logo/pizza/pizza1.png"
+                  alt=""
+                />
+                <img
+                  class="pizza7 nav-slice"
+                  src="img/logo/pizza/pizza2.png"
+                  alt=""
+                />
+                <img
+                  class="pizza6 nav-slice"
+                  src="img/logo/pizza/pizza1.png"
+                  alt=""
+                />
+                <img
+                  class="pizza5 nav-slice"
+                  src="img/logo/pizza/pizza2.png"
+                  alt=""
+                />
+                <img
+                  class="pizza4 nav-slice"
+                  src="img/logo/pizza/pizza1.png"
+                  alt=""
+                />
+                <img
+                  class="pizza3 nav-slice"
+                  src="img/logo/pizza/pizza2.png"
+                  alt=""
+                />
+                <img
+                  class="pizza2 nav-slice"
+                  src="img/logo/pizza/pizza2.png"
+                  alt=""
+                />
+                <img
+                  class="pizza1 nav-slice"
+                  src="img/logo/pizza/pizza1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </li>
+          <li class="nav-menu-link">
+            <a class="nav-menu-pasta" href="#">
+              <img
+                class="nav-pasta-text"
+                src="img/nav/pasta/pastaTextLight.png"
+                alt=""
+              />
+              <div class="nav-pasta">
+                <img class="pasta-part" src="img/nav/pasta/plate.png" alt="" />
+                <img class="pasta-part" src="img/nav/pasta/pasta.png" alt="" />
+                <img
+                  class="pasta-part"
+                  src="img/nav/pasta/tomatoes.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </li>
+          <li class="nav-menu-link">
+            <a class="#" href="#">
+              <span>Dolci</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="wrapper-menu" id="menu">
+        <div class="menu"></div>
+      </div>
+    </main>
 
     <footer></footer>
   </body>

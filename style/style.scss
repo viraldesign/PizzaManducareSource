@@ -1,16 +1,149 @@
-// :root {
-// }
+//////////*/ COLOR PRESETS /*//////////
+:root {
+  --gray1: #f8f9fa; //Cultured
+  --gray2: #e9ecef; //Cultured
+  --gray3: #dee2e6; //Gainsboro
+  --gray4: #ced4da; //Light Gray
+  --gray5: #adb5bd; //Cadet Blue Crayola
+  --gray6: #6c757d; //State Gray
+  --gray7: #495057; //Davys Grey
+  --gray8: #343a40; //Gunmetal
+  --gray9: #212529; //Charleston Green
+  --gray10: #1a1a1a; //Nero
+
+  --yellow1: #fffef0; //Ivory
+  --yellow2: #fefce0; //Light Yellow
+  --yellow3: #fdf9c0; //Cream
+  --yellow4: #fcf6a0; //Lemon Yellow Crayan
+  --yellow5: #faf280; //Canary
+  --yellow6: #f8eb40; //Lemon Yellow
+  --yellow7: #eeef20; //Xanthic
+  --yellow8: #f7e820; //Middle Yellow
+  --yellow9: #f2e315; //Titanium Yellow
+  --yellow10: #ecdd09; //Titanium Yellow
+
+  --gold1: #ffe58d; //Jasmin
+  --gold2: #ffde70; //Orange Yellow
+  --gold3: #ffd95c; //Mustard
+  --gold4: #ffd447; //Mustard
+  --gold5: #ffcf33; //Sunglow
+  --gold6: #ffcb1f; //Sunglow
+  --gold7: #ffc60a; //Mikado Yellow
+  --gold8: #f5bc00; //Orange Yellow
+  --gold9: #e0ac00; //Goldenrod
+  --gold10: #cc9c00; //Lemon Curry
+
+  --orange1: #ffb600; //Selective Yellow
+  --orange2: #ffaa00; //Chrome Yellow
+  --orange3: #ff9e00; //Orange Peel
+  --orange4: #ff9100; //Yellow Orange Crayan
+  --orange5: #ff8500; //Dark Orange
+  --orange6: #ff7900; //Heat Wave
+  --orange7: #ff6d00; //Pumpkin
+  --orange8: #ff6000; //Safety Orange
+  --orange9: #ff5400; //Orange Pantone
+  --orange10: #ff4800; //Red Orange
+
+  --red1: #e01e37; //Rose Madder
+  --red2: #da1e37; //Crimson
+  --red3: #c71f37; //Cardinal
+  --red4: #bd1f36; //Red NCS
+  --red5: #b21e35; //Red NCS
+  --red6: #a71e34; //Crimson UA
+  --red7: #a11d33; //Crimson UA
+  --red8: #85182a; //Antique Ruby
+  --red9: #6e1423; //Burgundy
+  --red10: #641220; //Persian Plum
+
+  --blue1: #caf0f8; //Powder Blue
+  --blue2: #ade8f4; //Blizzard Blue
+  --blue3: #90e0ef; //Sky Blue Crayola
+  --blue4: #48cae4; //Sky Blue Crayola
+  --blue5: #00b4d8; //Cerulean Crayola
+  --blue6: #0096c7; //Blue Green
+  --blue7: #5390d9; //Tufts Blue
+  --blue8: #0077b6; //Star Command Blue
+  --blue9: #023e8a; //Dark Cornflower Blue
+  --blue10: #03045e; //Navy Blue
+
+  --violet1: #e0aaff; //Mauve
+  --violet2: #c77dff; //Heliotrope
+  --violet3: #9d4edd; //Dark Orchid
+  --violet4: #6930c3; //French Violet
+  --violet5: #7b2cbf; //French Violet
+  --violet6: #7400b8; //Purple
+  --violet7: #5a189a; //Purple
+  --violet8: #3c096c; //Persian Indigo
+  --violet9: #240046; //Russian Violet
+  --violet10: #10002b; //Russian Violet
+
+  --turquoise1: #d8f3dc; //Nyanza
+  --turquoise2: #b7e4c7; //Turquoise Green
+  --turquoise3: #95d5b2; //turquoise Green
+  --turquoise4: #74c69d; //Ocean Green
+  --turquoise5: #52b788; //Ocean Green
+  --turquoise6: #40916c; //Illumination Emerald
+  --turquoise7: #007f5f; //Bottle Green
+  --turquoise8: #2d6a4f; //Apple Green
+  --turquoise9: #1b4332; //Brunswick Green
+  --turquoise10: #081c15; //Dark Jungle Green
+
+  --green1: #ffff3f; //Maximum Yellow
+  --green2: #eeef20; //Xanthic
+  --green3: #dddf00; //Titanium Yellow
+  --green4: #d4d700; //Pear
+  --green5: #bfd200; //Bitter Lemon
+  --green6: #aacc00; //Android Green
+  --green7: #80b918; //Apple Green
+  --green8: #55a630; //Green RYB
+  --green9: #2b9348; //Spanish Green
+  --green10: #007f5f; //Spanish Viridian
+
+  --brightness-black: brightness(-100%);
+  --brightness-white: brightness(100%);
+}
+
+.light {
+  --header-bg: var(--gray10);
+  --header-text: var(--gray10);
+
+  --main-bg: var(--gray1);
+  --main-text: var(--gray10);
+
+  --menu-bg: var(--gray3);
+  --menu-text: var(--gray1);
+}
+
+.dark {
+  --header-bg: var(--gray10);
+  --header-text: var(--gray1);
+
+  --main-bg: linear-gradient(to right, var(--gray8), var(--gray9));
+  --main-text: var(--gray1);
+
+  --menu-bg: var(--gray10);
+  --main-text: var(--gray1);
+}
+
+//////////*/ OVERALL CSS /*//////////
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: white;
+  background: var(--main-bg);
+  color: var(--main-text);
 }
 
-//////////*/  HEADER  /*//////////
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+//////////*/ HEADER /*//////////
 
 .wrapper-header {
   width: auto;
@@ -21,12 +154,12 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: #1a1a1a;
+  background: var(--header-bg);
 
   clip-path: polygon(0% 0%, 100% 0px, 100% 50%, 50% 500px, 0% 50%);
 }
 
-//////////*/ LOGO  /*//////////
+//////////*/ LOGO /*//////////
 
 .wrapper-logo {
   width: 320px;
@@ -71,6 +204,9 @@ body {
   width: 350px;
   height: 350px;
 
+  top: -35px;
+  left: -45px;
+
   transition: 0.1s ease-in-out;
 }
 
@@ -82,6 +218,8 @@ body {
 
   pointer-events: none;
   position: absolute;
+
+  z-index: 2;
 
   transform: rotate(-10deg);
 }
@@ -99,12 +237,18 @@ body {
   height: 100%;
 }
 
-//////////*/ PIZZA  /*//////////
+//////////*/ PIZZA PRESET /*//////////
+
+.pizza1,
+.pizza2 {
+  top: 0px;
+  left: 0px;
+}
 
 .pizza3,
 .pizza4 {
-  top: -2px;
-  left: 3px;
+  top: -1px;
+  left: 2px;
 
   transform: rotate(90deg);
 }
@@ -112,15 +256,214 @@ body {
 .pizza5,
 .pizza6 {
   top: 1px;
-  left: 3px;
+  left: 2px;
 
   transform: rotate(180deg);
 }
 
 .pizza7,
 .pizza8 {
-  top: 3px;
+  top: 2px;
   left: 0px;
 
   transform: rotate(270deg);
 }
+
+//////////*/ MAIN /*//////////
+
+.wrapper-main {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//////////*/ MENU NAV /*//////////
+
+.wrapper-nav-menu {
+  width: 1000px;
+  height: 100px;
+
+  margin: 40px 0px 40px 0px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-menu-links {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  list-style: none;
+  user-select: None;
+}
+
+.nav-menu-link {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 360px;
+
+  // background-color: gray;
+
+  a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.active {
+  background: red;
+}
+
+//////////*/ MENU NAV ICONS /*//////////
+
+////* PIZZA
+
+.nav-menu-pizza {
+  width: 180px;
+  height: 180px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-pizza {
+  width: 180px;
+  height: 180px;
+
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-pizza:hover {
+  transform: rotate(35deg);
+}
+
+.nav-slice {
+  width: 180px;
+  height: 180px;
+
+  user-select: None;
+
+  position: absolute;
+
+  transition: 0.1s ease-in-out;
+}
+
+.nav-slice:active {
+  width: 200px;
+  height: 200px;
+
+  top: -11px;
+  left: -13px;
+
+  transition: 0.1s ease-in-out;
+}
+
+.nav-slice-text {
+  width: 180px;
+  height: 180px;
+
+  left: 0px;
+
+  pointer-events: none;
+  position: absolute;
+
+  z-index: 2;
+
+  transform: rotate(-10deg);
+}
+
+////* PASTA
+
+.nav-menu-pasta {
+  width: 180px;
+  height: 180px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-pasta {
+  width: 180px;
+  height: 180px;
+
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-pasta:hover {
+  transform: rotate(35deg);
+}
+
+.pasta-part {
+  width: 180px;
+  height: 180px;
+
+  user-select: None;
+
+  position: absolute;
+
+  transition: 0.1s ease-in-out;
+}
+
+.pasta-part:active {
+  width: 200px;
+  height: 200px;
+
+  transition: 0.1s ease-in-out;
+}
+
+.nav-pasta-text {
+  width: 180px;
+  height: 180px;
+
+  left: 0px;
+
+  pointer-events: none;
+  position: absolute;
+
+  z-index: 2;
+
+  transform: rotate(-10deg);
+}
+
+//////////*/ MENU /*//////////
+
+.wrapper-menu {
+  width: 1000px;
+  height: 1000px;
+
+  background: var(--menu-bg);
+}
+
+//////////*/ Animations /*//////////

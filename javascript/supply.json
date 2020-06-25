@@ -1,0 +1,66 @@
+let pizza = `[{
+  {
+    "pizza-id": 1,
+    "pizza-name": "margherita",
+    "pizza-ingredients":"tomato sauce, mozzarella, basil",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "margherita"
+  },
+  {
+    "pizza-id": 2,
+    "pizza-name": "prosciutto",
+    "pizza-ingredients":"shoulder of ham, cheese",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "prosciutto"
+  },
+  {
+    "pizza-id": 3,
+    "pizza-name": "salami",
+    "pizza-ingredients":"salami, cheese",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "salami"
+  },
+  {
+    "pizza-id": 4,
+    "pizza-name": "funghi freschi",
+    "pizza-ingredients":"fresh chestnut mushrooms, cheese",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "funghi-freschi"
+  },
+  {
+    "pizza-id": 5,
+    "pizza-name": "prosciutto e funghi",
+    "pizza-ingredients":"shoulder of ham, fresh chestnut mushrooms, chesse",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "prosciutto-e-funghi"
+  },
+  {
+    "pizza-id": 6,
+    "pizza-name": "braccio di ferro",
+    "pizza-ingredients":"spinach, egg, cheese, garlic",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "braccio-di-ferro"
+  },
+  {
+    "pizza-id": 7,
+    "pizza-name": "hawaii",
+    "pizza-ingredients":"shoulder of ham, pineapple, chesse",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "hawaii"
+  },
+  {
+    "pizza-id": 8,
+    "pizza-name": "canario",
+    "pizza-ingredients":"shoulder of ham, fresh chestnut mushrooms, salami, anchovies, chesse",
+    "pizza-slice1": "img/logo/pizza1.png",
+    "pizza-slice1": "img/logo/pizza2.png",
+    "pizza-link": "canario"
+  }
+}]`
